@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+
+.md {
+  max-width: 800px;
+  margin: 30px;
+  margin-top: 58px;
+  margin-left: 425px;
+  
+  
+  h1 h2 h3 h4 h5 h6 {
+    
+  }
+  h1 {
+    font-size: 40px;
+    margin: 16px 0;
+    padding-bottom: 16px;
+    font-weight: 500;
+    color: #333333;
+  }
+  h2 {
+    font-size: 32px;
+    margin: 16px 0;
+    font-weight: 500;
+    color: #333333;
+  }
+
+  h5 {
+    font-size:16px;
+    font-weight: lighter;
+    background-color: #1E88E5;
+    padding: 8px 16px;
+    color: #FAFAFA;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0px;
+  }
+  pre {
+    margin-top: 0;
+    padding: 16px;
+    background-color: #FCFCFC;
+    border: 0.5px solid #DBDBDB;
+    font-family: Roboto Mono;
+    font-size: 16px;
+  }
+  blockquote {
+    border-left: 8px solid #3576CB;
+    margin: 24px 0;
+    background-color: #F5F8FC;
+    padding: 8px 32px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
+    margin: 16px 0;
+    color: #000000;
+    overflow: hidden;
+    letter-spacing: 0.1px;
+  }
+  hr {
+    margin: 40px 0;
+    border-top: 1px solid #DBDBDB;
+  }
+  a {
+    color: #3576CB;
+    text-decoration: none;
+    &:hover {
+      font-weight: bolder;
+    }
+  }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
