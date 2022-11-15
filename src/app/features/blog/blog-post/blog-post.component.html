@@ -1,8 +1,6 @@
-<nav>
-  <span routerLink="..">Back</span>
-</nav>
-
-<div [innerHtml]="blogMarkdown" class="md">
+<div class="page-container">
+  <nav>
+    <a routerLink="..">Back</a>
+  </nav> 
+  <div [innerHtml]="blogMarkdown" class="md"></div>
 </div>
-{{ blogMarkdown }}
-

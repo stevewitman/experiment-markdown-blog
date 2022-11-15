@@ -1,18 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
 
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+nav > a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 16px 32px 32px 32px;
+}
 
 
 
 .md {
-  max-width: 800px;
-  margin: 30px;
-  margin-top: 58px;
-  margin-left: 425px;
-  
-  
-  h1 h2 h3 h4 h5 h6 {
-    
-  }
   h1 {
     font-size: 40px;
     margin: 16px 0;
@@ -26,23 +34,52 @@
     font-weight: 500;
     color: #333333;
   }
+  h3 {
+    font-size: 32px;
+    margin: 16px 0;
+    font-weight: 500;
+    color: #333333;
+  }
+  // terminal
+  h4 {
+    font-family: Roboto Mono;
+    font-size: 15px;
+    padding: 24px 24px;
+    background-color: #444444;
+    color: #77F94E;
+    border-radius: 5px;
+  }
 
-  h5 {
+  // code block file name
+  h5 { 
     font-size:16px;
     font-weight: lighter;
     background-color: #1E88E5;
-    padding: 8px 16px;
+    padding: 10px 16px;
     color: #FAFAFA;
     border-radius: 5px 5px 0 0;
     margin-bottom: 0px;
   }
+  // code block
   pre {
+    color: #1E88E5;
     margin-top: 0;
-    padding: 16px;
+    padding: 24px;
     background-color: #FCFCFC;
     border: 0.5px solid #DBDBDB;
     font-family: Roboto Mono;
     font-size: 16px;
+    border-radius: 0 0 5px 5px;
+  }
+  // code inline
+  *:not(pre) code {
+    margin-top: 0;
+    padding:3px;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    font-family: Roboto Mono;
+    font-size: 15px;
+    color: #333333;
   }
   blockquote {
     border-left: 8px solid #3576CB;
@@ -59,6 +96,19 @@
     overflow: hidden;
     letter-spacing: 0.1px;
   }
+  ul {
+    margin-top: 12px;
+    padding-left: 16px;
+  }
+  ol {
+    margin-top: 12px;
+    padding-left: 16px;
+  }
+  li {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
+  }
   hr {
     margin: 40px 0;
     border-top: 1px solid #DBDBDB;
@@ -67,10 +117,16 @@
     color: #3576CB;
     text-decoration: none;
     &:hover {
-      font-weight: bolder;
+      text-decoration: underline;
+    }
+    code {
+      color: #3576CB;
     }
   }
+  img {
+    max-width: 800px;
+  }
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
 
